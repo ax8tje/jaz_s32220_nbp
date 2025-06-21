@@ -23,6 +23,12 @@ public class RateController {
         this.rateService = rateService;
     }
 
+//    Ten ResponseEntity zwraca sredni kurs waluty w zadamym zakresie jakby ogolnie
+//    @Param currency zwraca kod waluty zgodny z api nbp
+//    @Param start to poczatek zakresu (format ISO yyyy-MM-dd)
+//    @Param end to koncowa data zakresu (format ISO yyyy-MM-dd)
+//    @return to odp zwracajaca obliczona srednia i dane z tego zapytania
+
     @GetMapping("/average")
     public ResponseEntity<Map<String, Object>> getAverageRate(
             @RequestParam String currency,

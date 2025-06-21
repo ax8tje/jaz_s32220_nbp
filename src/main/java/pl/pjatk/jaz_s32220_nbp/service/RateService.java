@@ -10,6 +10,16 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.stream.StreamSupport;
 
+//      Tu jest grubo, bo wywolujemy api nbp i obliczamy
+//      sredni kurs na podanym przedziale, a potem zapisujemy
+//      wynik w bazie danych jako link {@link pl.pjatk.jaz_s32220_nbp.entity.RateRequest}.
+//
+//      @param currency to znowu kod waluty...
+//      @param startDate data poczatkowa (format ISO yyyy-MM-dd)
+//      @param endData data koncowa (format ISO yyyy-MM-dd)
+//      @return oblicza srednia wartosc kursu
+//      @throws gdy brak danych dla obliczen
+
 @Service
 public class RateService {
     private final RateRequestRepository repository;
