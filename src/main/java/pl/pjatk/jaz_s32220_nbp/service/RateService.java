@@ -1,6 +1,7 @@
 package pl.pjatk.jaz_s32220_nbp.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import pl.pjatk.jaz_s32220_nbp.entity.RateRequest;
 import pl.pjatk.jaz_s32220_nbp.repository.RateRequestRepository;
@@ -9,6 +10,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.stream.StreamSupport;
 
+@Service
 public class RateService {
     private final RateRequestRepository repository;
     public final RestTemplate restTemplate = new RestTemplate();
