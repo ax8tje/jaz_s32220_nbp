@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 
 //      Encja z informacjami o wykonywanym zapytaniu sredniej kursu
 //      Zwraca kod waluty, daty start/end, obliczona srednia, data wpisu
+//
 
 @Entity
 public class RateRequest {
